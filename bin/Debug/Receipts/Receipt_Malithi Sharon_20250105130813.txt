@@ -1,0 +1,8 @@
+--- Hardware Shop Receipt ---
+Customer: Malithi Sharon
+Inventory Name: Liquid Cooler
+Inventory Type: Coolers
+Quantity: 89
+Total: Rs. 623000
+Date: 2025-01-05
+--------------------------------

@@ -1,0 +1,8 @@
+--- Hardware Shop Receipt ---
+Customer: Senal Kavinda
+Inventory Name: Mouse
+Inventory Type: Peripheral
+Quantity: 2
+Total: Rs. 8000
+Date: 2025-01-05
+--------------------------------

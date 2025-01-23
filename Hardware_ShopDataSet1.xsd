@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Hardware_ShopDataSet1" targetNamespace="http://tempuri.org/Hardware_ShopDataSet1.xsd" xmlns:mstns="http://tempuri.org/Hardware_ShopDataSet1.xsd" xmlns="http://tempuri.org/Hardware_ShopDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Hardware_ShopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Hardware_ShopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Hardware_shop.Properties.Settings.GlobalReference.Default.Hardware_ShopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InventoryTableAdapter" GeneratorDataComponentClassName="InventoryTableAdapter" Name="Inventory" UserDataComponentName="InventoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Hardware_ShopConnectionString (Settings)" DbObjectName="Hardware_Shop.dbo.Inventory" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT InventoryType FROM dbo.Inventory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="InventoryType" DataSetColumn="InventoryType" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Hardware_ShopConnectionString (Settings)" DbObjectName="Hardware_Shop.dbo.Inventory" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT InventoryType FROM dbo.Inventory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Hardware_ShopDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Hardware_ShopDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Hardware_ShopDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Inventory" msprop:Generator_RowClassName="InventoryRow" msprop:Generator_RowEvHandlerName="InventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryRowDeleted" msprop:Generator_RowDeletingName="InventoryRowDeleting" msprop:Generator_RowEvArgName="InventoryRowChangeEvent" msprop:Generator_TablePropName="Inventory" msprop:Generator_RowChangedName="InventoryRowChanged" msprop:Generator_UserTableName="Inventory" msprop:Generator_RowChangingName="InventoryRowChanging" msprop:Generator_TableClassName="InventoryDataTable" msprop:Generator_TableVarName="tableInventory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InventoryType" msprop:Generator_UserColumnName="InventoryType" msprop:Generator_ColumnPropNameInTable="InventoryTypeColumn" msprop:Generator_ColumnPropNameInRow="InventoryType" msprop:Generator_ColumnVarNameInTable="columnInventoryType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

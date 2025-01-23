@@ -1,0 +1,8 @@
+--- Hardware Shop Receipt ---
+Customer: Nethmi Menusha
+Inventory Name: Processor
+Inventory Type: Hardware
+Quantity: 1
+Total: Rs. 50000
+Date: 2025-01-05
+--------------------------------

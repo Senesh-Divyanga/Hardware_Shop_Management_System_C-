@@ -1,0 +1,8 @@
+--- Hardware Shop Receipt ---
+Customer: Nishara Dewmini
+Inventory Name: Processor
+Inventory Type: Hardware
+Quantity: 3
+Total: Rs. 150000
+Date: 2025-01-05
+--------------------------------
